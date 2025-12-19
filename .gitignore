@@ -1,0 +1,8 @@
+# Ignore all sub projects
+*/*
+
+# Don't ignore github configuration files
+!.github/*
+
+# Personal settings ignored
+.claude
