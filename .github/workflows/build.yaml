@@ -1,0 +1,13 @@
+name: Basic Quality Checks
+
+on:
+  pull_request:
+    branches: [main]
+
+jobs:
+  quality:
+    uses: kube-kaptain/buildon-github-actions/.github/workflows/basic-quality-checks.yaml@1.0.9
+    # No push trigger = no tagging, quality checks only run on PRs
+     with:
+       block-slashes: true                  # Default is false
+       block-conventional-commits: true     # Default is false
