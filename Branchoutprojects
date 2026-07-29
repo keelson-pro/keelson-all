@@ -1,5 +1,7 @@
 keelson
+keelson-argocd-rollouts-rbac
 keelson-base-image
+keelson-helm-chart
+keelson-package
 keelson-pro
-keelson-scripts
 keelson-test-image
