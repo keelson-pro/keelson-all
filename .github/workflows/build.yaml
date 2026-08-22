@@ -8,5 +8,5 @@ jobs:
   basic-quality:
     uses: kube-kaptain/buildon-github-actions/.github/workflows/basic-quality-checks.yaml@1.1.53
     permissions:
-      contents: write
+      contents: read
       checks: write
