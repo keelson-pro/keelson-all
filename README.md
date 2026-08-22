@@ -46,6 +46,10 @@ eventually gave up, adding imagePullSecrets to every workload spec that needed a
 auto deploy using keel. This was a bad experience end to end and extremely 
 frustrating to say the least. I vowed to do better. Keelson is the result.
 
+# License
+
+Keelson is MIT licensed except for `*.md` Markdown docs which are CC-BY-SA-4.0
+For more detail see [LICENSE.md](https://github.com/keelson-pro/.github/blob/main/LICENSE.md).
 
 # More info
 
