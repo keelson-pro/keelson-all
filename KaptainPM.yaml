@@ -1,0 +1,6 @@
+apiVersion: kaptain.org/1.28
+kind: basic-quality-checks
+
+spec:
+  layers:
+    - ghcr.io/kube-kaptain/layer/layer-github-flow-strict:[1.3]
