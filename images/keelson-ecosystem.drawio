@@ -1,0 +1,80 @@
+<mxfile host="app.diagrams.net" modified="2026-08-22T00:00:00.000Z" agent="Claude" version="24.7.7" type="device">
+  <diagram name="Keelson ecosystem" id="keelson-ecosystem">
+    <mxGraphModel dx="1400" dy="940" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="940" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <mxCell id="title" value="&lt;b&gt;Keelson repositories&lt;/b&gt;" style="text;html=1;align=left;verticalAlign=middle;fontSize=18;fontColor=#1F3B57;" vertex="1" parent="1">
+          <mxGeometry x="60" y="30" width="600" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="all" value="&lt;b style=&quot;font-size:15px&quot;&gt;keelson-all&lt;/b&gt;&amp;nbsp;&amp;nbsp;·&amp;nbsp;&amp;nbsp;branchout root repo&lt;br&gt;&lt;span style=&quot;font-size:12px&quot;&gt;Living documentation describing the repos and how they fit together&lt;/span&gt;" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;dashed=1;dashPattern=8 6;fillColor=#F5F7FA;strokeColor=#7F8C9B;fontSize=13;fontColor=#4A5A6B;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="60" y="76" width="1140" height="62" as="geometry" />
+        </mxCell>
+
+        <mxCell id="test" value="&lt;b style=&quot;font-size:15px&quot;&gt;keelson-test-image&lt;/b&gt;&lt;br&gt;&lt;br&gt;&lt;span style=&quot;font-size:12px&quot;&gt;Matches the base images but with kubectl and&lt;br&gt;other tools mocked out. A consistent test&lt;br&gt;environment regardless of the host OS and&lt;br&gt;local tooling versions.&lt;/span&gt;" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="460" y="170" width="340" height="130" as="geometry" />
+        </mxCell>
+
+        <mxCell id="base" value="&lt;b style=&quot;font-size:15px&quot;&gt;keelson-base-image&lt;/b&gt;&lt;br&gt;&lt;br&gt;&lt;span style=&quot;font-size:12px&quot;&gt;A branch and associated image series&lt;br&gt;per Kubernetes version.&lt;/span&gt;" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;fillColor=#FFE6CC;strokeColor=#D79B00;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="60" y="360" width="340" height="140" as="geometry" />
+        </mxCell>
+
+        <mxCell id="core" value="&lt;b style=&quot;font-size:18px&quot;&gt;keelson&lt;/b&gt;&lt;br&gt;&lt;br&gt;&lt;span style=&quot;font-size:13px&quot;&gt;scripts&amp;nbsp; ·&amp;nbsp; manifests&amp;nbsp; ·&amp;nbsp; default values&lt;br&gt;bundled for reuse&amp;nbsp; ·&amp;nbsp; docs&lt;/span&gt;" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;strokeWidth=3;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="460" y="360" width="340" height="140" as="geometry" />
+        </mxCell>
+
+        <mxCell id="rbac" value="&lt;b style=&quot;font-size:15px&quot;&gt;keelson-argo-rollouts-rbac&lt;/b&gt;&lt;br&gt;&lt;br&gt;&lt;span style=&quot;font-size:12px&quot;&gt;extra RBAC manifests for running&lt;br&gt;Keelson with Argo Rollouts&lt;/span&gt;" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;fillColor=#E1D5E7;strokeColor=#9673A6;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="860" y="360" width="340" height="140" as="geometry" />
+        </mxCell>
+
+        <mxCell id="pkg" value="&lt;b style=&quot;font-size:15px&quot;&gt;keelson-package&lt;/b&gt;&lt;br&gt;&lt;br&gt;&lt;span style=&quot;font-size:12px&quot;&gt;A branch and associated image series per Kubernetes&lt;br&gt;version. Combines the matching base image with a version&lt;br&gt;of the Keelson scripts and manifests and publishes it.&lt;/span&gt;" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="60" y="560" width="540" height="130" as="geometry" />
+        </mxCell>
+
+        <mxCell id="kaptain" value="&lt;b style=&quot;font-size:15px&quot;&gt;Kaptain&lt;/b&gt;&lt;br&gt;&lt;br&gt;&lt;span style=&quot;font-size:12px&quot;&gt;One line inclusion into a product or&lt;br&gt;run-platform-* meta environment.&lt;/span&gt;" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;dashed=1;dashPattern=8 6;fillColor=#F5F7FA;strokeColor=#7F8C9B;fontSize=13;fontColor=#4A5A6B;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="60" y="750" width="540" height="130" as="geometry" />
+        </mxCell>
+
+        <mxCell id="helm" value="&lt;b style=&quot;font-size:15px&quot;&gt;keelson-helm-chart&lt;/b&gt;&lt;br&gt;&lt;br&gt;&lt;span style=&quot;font-size:12px&quot;&gt;manifests → Helm templates&lt;br&gt;defaults → values.yaml&lt;/span&gt;" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;fillColor=#F8CECC;strokeColor=#B85450;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="660" y="750" width="540" height="130" as="geometry" />
+        </mxCell>
+
+        <mxCell id="e-test-core" value="image only" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#D6B656;strokeWidth=2;fontSize=12;fontColor=#8A6100;labelBackgroundColor=#FFFFFF;endArrow=block;endFill=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="test" target="core">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="e-base-pkg" value="base image" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#D79B00;strokeWidth=2;fontSize=12;fontColor=#8A6100;labelBackgroundColor=#FFFFFF;endArrow=block;endFill=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.315;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="base" target="pkg">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="e-core-pkg" value="scripts + manifests" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#6C8EBF;strokeWidth=2;fontSize=12;fontColor=#33526E;labelBackgroundColor=#FFFFFF;endArrow=block;endFill=1;exitX=0.125;exitY=1;exitDx=0;exitDy=0;entryX=0.819;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="core" target="pkg">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="e-core-helm" value="manifests + defaults" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#6C8EBF;strokeWidth=2;fontSize=12;fontColor=#33526E;labelBackgroundColor=#FFFFFF;endArrow=block;endFill=1;exitX=0.875;exitY=1;exitDx=0;exitDy=0;entryX=0.181;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="core" target="helm">
+          <mxGeometry x="-0.5" relative="1" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+
+        <mxCell id="e-rbac-helm" value="rbac manifests" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#9673A6;strokeWidth=2;fontSize=12;fontColor=#6B4C80;labelBackgroundColor=#FFFFFF;endArrow=block;endFill=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.685;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="rbac" target="helm">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="e-pkg-helm" value="images only" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#82B366;strokeWidth=2;fontSize=12;fontColor=#4C7A3C;labelBackgroundColor=#FFFFFF;endArrow=block;endFill=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.090;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="pkg" target="helm">
+          <mxGeometry x="0.45" relative="1" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="709" y="625" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="e-pkg-kaptain" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;strokeColor=#7F8C9B;strokeWidth=2;endArrow=block;endFill=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="pkg" target="kaptain">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
