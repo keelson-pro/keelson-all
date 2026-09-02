@@ -1,5 +1,5 @@
 keelson
-keelson-argocd-rollouts-rbac
+keelson-argo-rollouts-rbac
 keelson-base-image
 keelson-helm-chart
 keelson-package
